@@ -37,7 +37,7 @@ multiSomaSameGeneCorTable1 <- GetMultiSomaSameGeneCorTable(ProMeta,expDat1Raw,"E
 multiSomaSameGeneCorTable2 <- GetMultiSomaSameGeneCorTable(ProMeta,expDat1Raw,"EntrezGeneID")
 
 ### select the Representative Somamer for the gene.
-# ranksX <- ReplaceRanksX(ProMeta,ranksX,"EntrezGeneID",multiSomaSameGeneCorTable2)
+# ranksX <- ReplaceRanksX(ProMeta,ranksOriginal,"EntrezGeneID",multiSomaSameGeneCorTable2)
 ranksX <- ReplaceRanksX(ProMeta,ranksOriginal,"EntrezGeneSymbol",multiSomaSameGeneCorTable1)
 
 ### prepare the Reactom genesets, replace the protein complexies with SomaID
