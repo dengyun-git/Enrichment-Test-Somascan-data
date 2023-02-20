@@ -4,7 +4,6 @@ myPathIn1 <- "where is your protein filtering file"
 myPathIn2 <- "where is your protein expression data"
 myPathIn3 <- "where is your Reactom downloaded file" 
 databaseFile <- "downloaded file"
-RFUstart ="seq.10000.28"
 ranksOriginal <- "your ranked metrics, with seq names"
 ### Then run the following, and View(enrichedPath), which should be your final results for Enrichment test based on Reactom
 
@@ -12,6 +11,8 @@ ranksOriginal <- "your ranked metrics, with seq names"
 ### main body
 ###____________________________________________________________________________________________________________________________________________________
 source("EnrichmentTest.SomaScan.R")
+
+RFUstart ="seq.10000.28"
 ### clear up protein meta data table
 ### For the purpose of extract information for multiple genes encoding complex proteins, tidy up the EntrezGeneID, EntrezGeneSymbol as well as UniProt which have multiple spaces
 proFil <-  read.csv(paste0(myPathIn1,'somascan/QC/patch1/Protein_filters_metadata.csv'),row.names = 1)
