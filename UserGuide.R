@@ -4,7 +4,8 @@ myPathIn1 <- "where is your protein filtering file"
 myPathIn2 <- "where is your protein expression data"
 myPathIn3 <- "where is your Reactom downloaded file" 
 databaseFile <- "downloaded file"
-ranksOriginal <- "your ranked metrics, with names of Gene Symbol/Gene ID"
+RFUstart ="seq.10000.28"
+ranksOriginal <- "your ranked metrics, with seq names"
 ### Then run the following, and View(enrichedPath), which should be your final results for Enrichment test based on Reactom
 
 ###____________________________________________________________________________________________________________________________________________________
