@@ -16,6 +16,7 @@ RFUstart ="seq.10000.28"
 ### clear up protein meta data table
 ### For the purpose of extract information for multiple genes encoding complex proteins, tidy up the EntrezGeneID, EntrezGeneSymbol as well as UniProt which have multiple spaces
 proFil <-  read.csv(paste0(myPathIn1,'somascan/QC/patch1/Protein_filters_metadata.csv'),row.names = 1)
+ProMeta <- proFil
 
 for(Counter in 1:nrow(proFil)){
   proFil$UniProt[Counter] <- gsub("\\s+","\\|",proFil$UniProt[Counter]) ### remove space only leave "|" as delimiter
